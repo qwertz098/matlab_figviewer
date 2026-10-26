@@ -1,0 +1,15 @@
+[package]
+name = "figviewer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+eframe = { version = "0.37.0", features = ["glow"] }
+egui_plot = "0.38.0"
+flate2 = "1.1.10"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
